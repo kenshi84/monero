@@ -54,6 +54,7 @@ set(unit_tests_sources
   parse_amount.cpp
   serialization.cpp
   slow_memmem.cpp
+  subaddress.cpp
   test_tx_utils.cpp
   test_peerlist.cpp
   test_protocol_pack.cpp
