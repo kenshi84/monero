@@ -55,7 +55,7 @@ class WalletSubaddress : public ::testing::Test
       w1.set_subaddress_label(subaddress_index, test_label);
     }
 
-    virtual void TearDown() 
+    virtual void TearDown()
     {
         boost::filesystem::wpath wallet_file(wallet_name);
         boost::filesystem::wpath wallet_address_file(wallet_name + ".address.txt");
@@ -63,7 +63,7 @@ class WalletSubaddress : public ::testing::Test
 
         if ( boost::filesystem::exists(wallet_file) )
             boost::filesystem::remove(wallet_file);
-        
+
         if ( boost::filesystem::exists(wallet_address_file) )
             boost::filesystem::remove(wallet_address_file);
 
